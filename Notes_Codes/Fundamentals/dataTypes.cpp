@@ -91,11 +91,83 @@ int main(){
 
 
     // 5] bool
-    // 6] string
-    // 8] long
-    // 9] long long
-    // 10] short
- 
+    // Syntax : bool VARIABLE_NAME;
+    // size of boolean is 1 byte
+    // what values can boolean data type store?
+    // So in boolean data type you can only store true/false (0/1)
+    // true = 1 (decimal form)  (what is binary 1? 0001)
+    // false = 0 (decmal form)  (what is binary 0? 0000)
 
+    bool my_bool;  //var declaration
+    my_bool = true; // var initialization  true (code form) -> 1 (output from) -> 0001 (memory from)
+    cout<<"value of my bool 1st: "<<my_bool<<endl;
+    my_bool = false; // re-assigning the value // false -> 0 -> 0000
+    cout<<"value of my bool 2nd: "<<my_bool<<endl;
+    //Anything you store in computer it gets stored in binary format?
+
+    // 6] string
+    // Syntax : string VARIABLE_NAME;
+    // string def :- String is a ordered set of characters
+    // chars = a to z, A to Z, 0 to 9, special characters (@#$%^)
+    // String rule :- always write string value in double quotes ("")
+    // string str = "Akash@10" -> 'A' 'k' 'a' 's' 'h' '@' '1' '0'
+    // string size = depends on how much characters you have given to it
+    // Akash@10 = number of char * char_size
+    //          =  8 * 1 byte
+    // size of "Akash@10" = 8 bytes
+
+    string str = "Akash@10";
+    cout<<"My string = "<<str<<endl;
+    // string is very very very important topic 
+    // we will separately cover this -- dedicatedly 
+    // how to find length
+    // access characters
+    // string methods
+    // problem solving based on string 
+    // interview/placement ke time --- 50-60 % question will be on string/Array
+
+    // 8] long
+    // Syntax :- long VARIABLE_NAME
+    // long is same as integer
+    // size of long on windows =  4 Bytes
+    // size of long on linux = 8 bytes
+    // Different operating system works on different types of architecture
+    // and these architecture decides what size will be for what data type
+    long my_long = 10; //var declaration + initialization on same line
+    cout<<"my_long : "<<my_long<<endl;
+
+
+    // 9] long long
+    // its a big brother of long/int
+    // syntax :- long long VARIABLE_NAME;
+    // size of long long is 8 Bytes (on every OS)  
+    // why do we need this long long?
+    // to store large integers
+
+    // 2 liter ka botlle and you want to store 5 liter water into it?
+    // bottles access kroge....5liter water milega?
+
+    int num1 = 2147483647;
+    int num2 = 2147483647;
+
+    long long sum = (long long)num1 + num2;
+    // while purforming this addition memory --- one space will be there for this task
+    // that space is called as buffer space (its int only right, lets give them int buffer space)
+
+    cout<<"sum : "<<sum<<endl;
+
+
+
+    // 10] short
+    // syntax :- short VARIABLE_NAME;
+    // short is kinda younger version of int
+    // size of short is 2 Bytes
+    // Range -32768 to 32767
+    short my_short = 123;
+    cout<<"my_short : "<<my_short<<endl;
+
+    // mostly you will use int only
+    // less memory occupied will give higher performance
+ 
     return 0;
 }
