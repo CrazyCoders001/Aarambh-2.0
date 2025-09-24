@@ -1,0 +1,11 @@
+1. Switch from one partition to another --> partitionName:- (A:)
+2. To list all the files/folders in current
+   directtory                           --> dir
+3. To change directory                  --> cd (cd DirectoryName)
+4. Vs code project open with short cut  --> code .
+5. To create a new directory/folder     --> mkdir DirName
+
+
+5. How to run cpp files
+   - g++ FileName.cpp -o FileName.exe  (If you dont get error run 2nd cmd)
+   - FileName.exe
